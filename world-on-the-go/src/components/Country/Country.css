@@ -1,0 +1,14 @@
+.countrystyle {
+  margin: 20px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.country-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.title{
+  text-align: center;
+}
