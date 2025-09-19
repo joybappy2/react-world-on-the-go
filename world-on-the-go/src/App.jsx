@@ -8,7 +8,6 @@ function App() {
   const countriesPromise = fetch(url).then((res) => res.json());
   return (
     <>
-      <h2>On the Go</h2>
       <Suspense fallback={<Fallback></Fallback>}>
         <Countries countriesPromise={countriesPromise}></Countries>
       </Suspense>
