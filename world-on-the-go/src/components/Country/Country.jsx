@@ -1,13 +1,11 @@
 import React from "react";
 import "./Country.css";
 
-const Country = ( { countries } ) => {
+const Country = ({ countries }) => {
   const clickHandle = () => {
-    const btns = document.querySelectorAll( '.vbtn' )
-    btns.forEach( btn => {
-      
-    })
-  }
+    const btns = document.querySelectorAll(".vbtn");
+    btns.forEach((btn) => {});
+  };
   return (
     <>
       <h1 className="title">Countries</h1>
@@ -18,11 +16,14 @@ const Country = ( { countries } ) => {
               <img src={country.flags.flags.png} alt="" />
               <h3>Name: {country.name.common}</h3>
               <p>Population: {country.population.population}</p>
-              <p>{ country.cca3.cca3 }</p>
+              <p>{country.cca3.cca3}</p>
               <p>
-                Area: { country.area.area } { country.area.area > 100 ? "Big" : "Small" }
+                Area: {country.area.area}{" "}
+                {country.area.area > 100 ? "Big" : "Small"}
               </p>
-              <button onClick={clickHandle} className="vbtn">Not Visited</button>
+              <button onClick={clickHandle} className="vbtn">
+                Not Visited
+              </button>
             </div>
           );
         })}
